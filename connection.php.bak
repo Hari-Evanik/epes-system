@@ -1,0 +1,29 @@
+<html>
+<body>
+<?php
+	//error_reporting(0);
+
+	$servername ="localhost";
+	$username ="root";
+	$password = "";
+	$dbname = "employee_evalution";
+
+ 
+	//create connection
+	$conn = mysqli_connect($servername, $username, $password, $dbname);
+	
+	//die if connection was unsuccessful:
+	if(!$conn)
+	{
+		die("Connection was unsuccessful due to --->>".mysqli_connect_error());
+	}
+	else  {
+		echo"Connection was successful: ";
+	}
+
+
+
+?>
+
+</body>
+</html>

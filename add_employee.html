@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      form {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"], select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: lightgray;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      
+      <label for="title">Title:</label>
+      <select id="title" name="title">
+        <option value="Manager">Manager</option>
+        <option value="Developer">Developer</option>
+        <option value="Designer">Designer</option>
+        <option value="Engineer">Engineer</option>
+        <option value="Analyst">Analyst</option>
+      </select>
+      
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department">
+      
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
